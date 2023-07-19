@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net472</TargetFrameworks>
+  </PropertyGroup>
+
+	<ItemGroup>
+		<!--ENTITY FRAMEWORK DOTNET CORE-->
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Condition="'$(TargetFramework)' == 'net6.0'" Version="6.0.0" />
+
+		<!-- end -->
+		
+		<!--ENTITY FRAMEWORK DOTNET FRAMEWORK-->
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.14" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.14">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.14" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.14" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.14">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.AspNetCore.TestHost" Condition="'$(TargetFramework)' == 'net472'" Version="2.1.1" />
+		<!-- end -->
+	</ItemGroup>
+</Project>

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository", ".\SoundInTheory.GenericRepository\SoundInTheory.GenericRepository.csproj", "{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests", ".\SoundInTheory.GenericRepository.Tests\SoundInTheory.GenericRepository.Tests.csproj", "{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests.Migrations.Core", ".\SoundInTheory.GenericRepository.Tests.Migrations.Core\SoundInTheory.GenericRepository.Tests.Migrations.Core.csproj", "{013DF327-9154-45E2-803E-93AA988258DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInTheory.GenericRepository.Tests.Migrations", ".\SoundInTheory.GenericRepository.Tests.Migrations\SoundInTheory.GenericRepository.Tests.Migrations.csproj", "{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInTheory.GenericRepository.Tests.Migrations.Framework", ".\SoundInTheory.GenericRepository.Tests.Migrations.Framework\SoundInTheory.GenericRepository.Tests.Migrations.Framework.csproj", "{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013DF327-9154-45E2-803E-93AA988258DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013DF327-9154-45E2-803E-93AA988258DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013DF327-9154-45E2-803E-93AA988258DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013DF327-9154-45E2-803E-93AA988258DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73BF18A3-53BC-4496-82C6-D57064497F35}
+	EndGlobalSection
+EndGlobal
