@@ -30,5 +30,11 @@ namespace SoundInTheory.GenericRepository
         bool Validate(object entity, List<ValidationResult> results);
         bool IsValid(object entity);
         bool Any(Expression<Func<TEntity, bool>> filter = null);
+
+        int Query(string sql, params object[] parameters);
+
+        List<TEntity> Query<TResult>(string sql, string includeProperties, params object[] parameters);
+
+        List<TEntity> Query<TResult>(string sql, params object[] parameters);
     }
 }

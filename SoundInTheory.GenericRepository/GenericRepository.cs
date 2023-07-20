@@ -303,6 +303,51 @@ namespace SoundInTheory.GenericRepository
             GC.SuppressFinalize(this);
         }
 
-        #endregion IDisposable Support
+#if NETSTANDARD2_0_OR_GREATER
+        public int Query(string sql, params object[] parameters)
+        {
+            return db.Database.ExecuteSqlCommand(sql, parameters);
+        }
+        public List<TEntity> Query<TResult>(string sql, string includeProperties, params object[] parameters)
+        {
+            var query = dbSet.FromSql(sql, parameters);
+            if (!string.IsNullOrWhiteSpace(includeProperties))
+            {
+                foreach (var includeProperty in includeProperties.Split
+                    (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            return query.ToList();
+        }
+#endif
+
+#if NET6_0_OR_GREATER
+        public int Query(string sql, params object[] parameters)
+        {
+            return db.Database.ExecuteSqlRaw(sql, parameters);
+        }
+        public List<TEntity> Query<TResult>(string sql, string includeProperties, params object[] parameters)
+        {
+            var query = dbSet.FromSqlRaw(sql, parameters);
+            if (!string.IsNullOrWhiteSpace(includeProperties))
+            {
+                foreach (var includeProperty in includeProperties.Split
+                    (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(includeProperty);
+                }
+            }
+            return query.ToList();
+        }
+#endif
+
+        public List<TEntity> Query<TResult>(string sql, params object[] parameters)
+        {
+            return Query<TResult>(sql, null, parameters);
+        }
+
+#endregion IDisposable Support
     }
 }

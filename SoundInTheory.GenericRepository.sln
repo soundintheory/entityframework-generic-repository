@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository", ".\SoundInTheory.GenericRepository\SoundInTheory.GenericRepository.csproj", "{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository", "SoundInTheory.GenericRepository\SoundInTheory.GenericRepository.csproj", "{212D3B54-E12D-4DC7-BD79-12F1BE2B6DAF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests", ".\SoundInTheory.GenericRepository.Tests\SoundInTheory.GenericRepository.Tests.csproj", "{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests", "SoundInTheory.GenericRepository.Tests\SoundInTheory.GenericRepository.Tests.csproj", "{D4E8CEF9-E3D3-460D-AC15-CDAC0AE92261}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests.Migrations.Core", ".\SoundInTheory.GenericRepository.Tests.Migrations.Core\SoundInTheory.GenericRepository.Tests.Migrations.Core.csproj", "{013DF327-9154-45E2-803E-93AA988258DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests.Migrations.Core", "SoundInTheory.GenericRepository.Tests.Migrations.Core\SoundInTheory.GenericRepository.Tests.Migrations.Core.csproj", "{013DF327-9154-45E2-803E-93AA988258DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInTheory.GenericRepository.Tests.Migrations", ".\SoundInTheory.GenericRepository.Tests.Migrations\SoundInTheory.GenericRepository.Tests.Migrations.csproj", "{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests.Migrations", "SoundInTheory.GenericRepository.Tests.Migrations\SoundInTheory.GenericRepository.Tests.Migrations.csproj", "{45F44EC2-ACFD-4E80-8F7B-68EAEFF48FDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoundInTheory.GenericRepository.Tests.Migrations.Framework", ".\SoundInTheory.GenericRepository.Tests.Migrations.Framework\SoundInTheory.GenericRepository.Tests.Migrations.Framework.csproj", "{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoundInTheory.GenericRepository.Tests.Migrations.Framework", "SoundInTheory.GenericRepository.Tests.Migrations.Framework\SoundInTheory.GenericRepository.Tests.Migrations.Framework.csproj", "{EB6A5B40-DA4B-4421-8BE3-014CD1C1FEED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{97E0E7AE-7927-4188-B060-1766F33F53FE}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -25,5 +25,14 @@ namespace SoundInTheory.GenericRepository.Tests
             var fruit = _fruits.Create(new Fruit() { Name = "Apple", Colour = "Red" });
             Assert.True(fruit.Id != 0);
         }
+
+        [Fact]
+        public void SqlRaw()
+        {
+            var fruit = _fruits.Create(new Fruit() { Name = "SelectableFruit", Colour = "Multicoloured" });
+            var fruitList = _fruits.Query<List<Fruit>>("SELECT * FROM Fruits WHERE Id = {0}", fruit.Id);
+            Assert.True(fruitList.Any());
+            Assert.True(fruitList.First().Id == fruit.Id);
+        }
     }
 }

@@ -1,11 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
+    <Title>SoundInTheory.EntityFramework.GenericRepository</Title>
+    <Authors>Sound In Theory</Authors>
+    <Company>Sound In Theory</Company>
+    <Product>SoundInTheory.EntityFramework.GenericRepository</Product>
+    <PackageProjectUrl>https://github.com/soundintheory/entityframework-generic-repository</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/soundintheory/entityframework-generic-repository</RepositoryUrl>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" />
+    <None Include="..\Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+	  <!--ENTITY FRAMEWORK DOTNET FRAMEWORK-->
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.14" Condition="'$(TargetFramework)' != 'net6.0'" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.14" Condition="'$(TargetFramework)'  != 'net6.0'" />
+	  <!-- end -->
+
+	  <!--ENTITY FRAMEWORK DOTNET CORE-->
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" Condition="'$(TargetFramework)' == 'net6.0'" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.0" Condition="'$(TargetFramework)' == 'net6.0'" />
+	  <!-- end -->
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
