@@ -14,7 +14,7 @@ namespace SoundInTheory.GenericRepository
         IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> filter = null, params string[] includeProperties);
         TEntity FindOne(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string[] includeProperties = null);
         TEntity FindOne(Expression<Func<TEntity, bool>> filter = null, params string[] includeProperties);
-        TEntity Find(int? id);
+        TEntity Find(int? id, bool withTracking = false);
         IQueryable<TEntity> FindAsQueryable(Expression<Func<TEntity, bool>> filter = null, Func<IQueryable<TEntity>, IOrderedQueryable<TEntity>> orderBy = null, string[] includeProperties = null);
         IQueryable<TEntity> FindAsQueryable(Expression<Func<TEntity, bool>> filter = null, params string[] includeProperties);
         TEntity Create(TEntity entity);

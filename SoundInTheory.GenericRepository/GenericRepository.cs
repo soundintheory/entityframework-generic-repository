@@ -21,7 +21,7 @@ namespace SoundInTheory.GenericRepository
             dbSet = db.Set<TEntity>();
         }
 
-        public virtual TEntity Find(int? id)
+        public virtual TEntity Find(int? id, bool withTracking = false)
         {
             if (!id.HasValue)
             {
@@ -29,6 +29,8 @@ namespace SoundInTheory.GenericRepository
             }
 
             var result = dbSet.Find(id);
+            if (!withTracking)
+                db.Entry(result).State = EntityState.Detached;
             return result;
         }
 
